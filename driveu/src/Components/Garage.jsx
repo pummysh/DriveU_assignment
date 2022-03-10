@@ -7,7 +7,7 @@ export const Garage =()=>{
     const [data,setData]=useState([]);
 
     useEffect(()=>{
-        const baseURL = 'http://localhost:2345';
+        const baseURL = 'https://driveupummy.herokuapp.com/';
         fetch(baseURL)
         .then(resp => resp.json())
         .then(data =>{ 
@@ -17,7 +17,7 @@ export const Garage =()=>{
 
     const location = (e) => {
         try {
-          fetch(`http://localhost:2345/location/${e.target.value}`)
+          fetch(`https://driveupummy.herokuapp.com/location/${e.target.value}`)
             .then((d) => d.json())
             .then((res) => {
               setData(res);
@@ -29,7 +29,7 @@ export const Garage =()=>{
     
       const rating = (e) => {
         try {
-          fetch(`http://localhost:2345/rating/${e.target.value}`)
+          fetch(`https://driveupummy.herokuapp.com/rating/${e.target.value}`)
             .then((d) => d.json())
             .then((res) => {
               setData(res);
@@ -41,7 +41,7 @@ export const Garage =()=>{
     
       const mop = (e) => {
         try {
-          fetch(`http://localhost:2345/mop/${e.target.value}`)
+          fetch(`https://driveupummy.herokuapp.com/mop/${e.target.value}`)
             .then((d) => d.json())
             .then((res) => {
               setData(res);
@@ -55,7 +55,7 @@ export const Garage =()=>{
       const discount = (e) => {
         
         try {
-          fetch(`http://localhost:2345/discount/${e.target.value}`)
+          fetch(`https://driveupummy.herokuapp.com/discount/${e.target.value}`)
             .then((d) => d.json())
             .then((res) => {
               setData(res);

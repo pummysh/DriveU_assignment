@@ -43,7 +43,7 @@ export const Checkout=()=>{
         let form=document.getElementById("myform");
         form.reset();
         alert("Thanks for visiting ");
-        <Navigate to="/"/>
+        return <Navigate to="/"/>
     }
 
     return <div>

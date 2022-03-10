@@ -12,7 +12,7 @@ export const Shop=()=>{
     const [total,setTotal]=useState(0)
 
     useEffect(()=>{
-        const baseURL = `http://localhost:2345/shop/${id}`;
+        const baseURL = `https://driveupummy.herokuapp.com/shop/${id}`;
         fetch(baseURL)
         .then(resp => resp.json())
         .then(a =>{ 
