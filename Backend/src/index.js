@@ -3,11 +3,7 @@ const app = express();
 const cors =require('cors');
 
 app.use(express.json());
-app.use(
-    cors({
-        origin:""
-    })
-)
+app.use(cors());
 
 const shopController=require('./controllers/shop.controller');
 
